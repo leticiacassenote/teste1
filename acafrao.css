@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: black;
+  }
+
+.header {
+    text-align: center;
+    padding: 50px;
+    font-size: 45px;
+    background-image: url("./acafrao.png");
+    background-position: center center;
+    background-size: cover;
+    rotate: 90;
+    color: #FFE6A7;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+  } 
+
+  .left,
+.middle,
+.right {
+  padding: 10px;
+
+}
+
+.left {
+  grid-area: left;
+}
+
+.middle {
+  grid-area: middle;
+}
+
+.right {
+  grid-area: right;
+}
+
+.footer {
+  text-align: center;
+  font-family: 'Lato';
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #6F1D1B;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #73b6d134;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #FFE6A7;
+  }
+
+
+
+@media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'first first first first first first' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'end end end end end end';
+    }
+  }

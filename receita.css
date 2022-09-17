@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+  }
+
+  head{
+    margin: none;
+    padding: 0;
+
+  }
+  
+  body {
+    font-family: 'Fjalla One', Arial, Helvetica, sans-serif;
+    color: lightgrey;
+    background-image: url('https://img.freepik.com/fotos-gratis/natureza-morta-com-comida-de-padaria-apetitosa_23-2149299457.jpg?w=740&t=st=1663181775~exp=1663182375~hmac=a3e6da6ada2a6aca9e6f1c1f7bda796ea5fcbe04cd208d01fd7bd5c9a051b370');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div {
+    text-align: center;
+    position: static;
+  }
+
+  .text1{
+    margin-top: 15%;
+    font-size: 50px;
+  }
+
+  .botao {
+    border: none;
+    margin-right: 7px; ;
+    border-radius: 10px;
+    color: #FFE6A7;
+    padding: 15px;
+    text-transform: uppercase bold;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: #6F1D1B;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+
+
+  }
+
+  .container{
+
+    margin: 5%;
+    width: 95vw;
+    height: 95vh;
+    background-color: rgba(0%, 0%, 0%, 0.4);
+    border-radius: 10px;
+  }

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: #432818;
+  }
+
+.header {
+    text-align: center;
+    padding: 50px;
+    font-size: 45px;
+    background-image: url('https://img.freepik.com/fotos-gratis/pao-de-fermento-caseiro_181624-31891.jpg?w=740&t=st=1663297708~exp=1663298308~hmac=4a7cbdffb4f36d6fb10f9fb9a6250042def4b44cab82146e1b4c1bf6bc5c6edf');
+    background-position: center;
+    background-size: cover;
+    color: #FFE6A7;
+
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+  } 
+
+  .left,
+.middle,
+.right {
+  padding: 10px;
+
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  background-color: #FFE6A7;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+  background-color: #BB9457;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+  background-color: #99582A;
+}
+
+.footer {
+  text-align: center;
+  font-family: 'Lato';
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #6F1D1B;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #73b6d134;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #FFE6A7;
+  }
+
+
+
+@media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'first first first first first first' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'end end end end end end';
+    }
+  }
